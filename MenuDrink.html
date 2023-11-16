@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/view.css">
+
+    <link rel="stylesheet" href="assets/CSS/styleBf.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__nav--top">
+            <div class="nav__address">
+                <div class="address__icon nav__icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="address__text nav__text">
+                    470 - Trần Đại Nghĩa - Ngũ Hành Sơn - Đà Nẵng
+                </div>
+            </div>
+            <div class="nav__hotline">
+                <div class="hotline__icon nav__icon">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                </div>
+                <div class="hotline__text nav__text">
+                    Hotline: 0388281722
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="header__left">
+                <div class="header__logo">
+                    <img src="./assets/images/your-logo.png" alt="">
+                </div>
+            </div>
+            <div class="header__navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="TrangChu.html" class="navbar__link">
+                            <i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="gioithieu.html" class="navbar__link">
+                            Giới thiệu</a>
+                    </li>
+                    <li class="navbar__item navbar__item-has">
+                        <a href="" class="navbar__link page__color">
+                            Thực đơn
+                            <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                        <div class="navbar__submenu navbar__submenu-has">
+                            <ul class="navbar__submenu-list">
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuLau.html" class="navbar__submenu-link">
+                                        Lẩu
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuBBQ.html" class="navbar__submenu-link">
+                                        Nướng BBQ
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuBuffet.html" class="navbar__submenu-link">
+                                        Buffet
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuDrink.html" class="navbar__submenu-link page__color">
+                                        Đồ uống
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="DatBan.html" class="navbar__link">
+                            </i> Đặt bàn
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="tintuc.html" class="navbar__link"> Tin tức</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="lienhe.html" class="navbar__link"> Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_mobile-and-tablet">
+                <label for="nav-mobile-input" class="nav_bars-btn">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                        class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </label>
+
+                <input type="checkbox" hidden class="nav_input" name="" id="nav-mobile-input">
+
+                <label for="nav-mobile-input" class="nav_overlay">
+
+                </label>
+
+                <nav class="nav_mobile">
+                    <label for="nav-mobile-input" class="nav_mobile-close">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="window-close"
+                            class="svg-inline--fa fa-window-close fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z">
+                            </path>
+                        </svg>
+                    </label>
+                    <ul class="nav_mobile-list">
+                        <li class="nav_mobile-link">
+                            <a href=""> <i class="fa fa-chevron-right" aria-hidden="true"></i> Trang chủ</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Giới thiệu</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>Thực đơn</a>
+                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div id="demo" class="collapse">
+                                <ul class="nav_mobile--sub-menu-list">
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Lẩu</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Nướng - BBQ</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Buffet</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Đồ uống</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Đặt bàn</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Tin tức</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Liên hệ</a>
+                        </li>
+                    </ul>
+            </div>
+
+
+        </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content_logo">
+            <a>MENU ĐỒ NƯỚNG</a>
+        </div>
+        <div class="content_menu">
+            <div class="content_menu-best" style="margin-top: 50px;">
+                <div class="text">
+                    <a>NƯỚC ÉP</a>
+                </div>
+                <div class="list1">
+                    <div class="container mt-3">
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card1"> <img class="card-img-top" src="assets/images/Drink/ruou.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Rượu vang</div>
+                                                <div class="text-muted">140.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card1"> <img class="card-img-top" src="assets/images/Drink/cam.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Nước cam</div>
+                                                <div class="text-muted">350.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card1"> <img class="card-img-top" src="assets/images/Drink/soda.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Soda blue</div>
+                                                <div class="text-muted">130.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card1"> <img class="card-img-top" src="assets/images/Drink/GKsuachua.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Sữa chua</div>
+                                                <div class="text-muted">200.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_menu-hs">
+                <div class="text">
+                    <a>BIA_RƯỢU</a>
+                </div>
+                <div class="list1">
+                    <div class="container mt-3">
+                        <div class="row" style="margin-bottom: 50px;">
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/biaKen.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Bia Heniken</div>
+                                                <div class="text-muted">140.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/biaHuda.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Bia Huda</div>
+                                                <div class="text-muted">350.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/biaSG.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Bia Sài Gòn</div>
+                                                <div class="text-muted">230.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/bia333.jfif">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Bia 333</div>
+                                                <div class="text-muted">200.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/ruouChivas.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Rượu Chivas</div>
+                                                <div class="text-muted">240.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/ruouSoju.png">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Rượu Soju</div>
+                                                <div class="text-muted">150.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/ruouMen.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Rượu Men</div>
+                                                <div class="text-muted">450.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/ruouTraicay.png">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Rượu trái cây</div>
+                                                <div class="text-muted">200.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_menu-thit">
+                <div class="text">
+                    <a>GIẢI KHÁT</a>
+                </div>
+                <div class="list1">
+                    <div class="container mt-3">
+                        <div class="row" style="margin-bottom: 50px;">
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/GKcoca.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Coca Cola</div>
+                                                <div class="text-muted">200.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/GKnuockhoang.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Nước khoáng</div>
+                                                <div class="text-muted">250.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/GKtradao.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Trà đào cam sả</div>
+                                                <div class="text-muted">230.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/GKbohuc.png">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Bò húc</div>
+                                                <div class="text-muted">130.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/GKsinhtodau.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Sinh tố dâu tây</div>
+                                                <div class="text-muted">140.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/GKtrasua.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Trà sữa trân châu</div>
+                                                <div class="text-muted">250.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/GKnuocchanh.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Nước chanh</div>
+                                                <div class="text-muted">230.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/kem.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Kem ly</div>
+                                                <div class="text-muted">300.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_menu-monkhac">
+                <div class="text">
+                    <a>CAFE</a>
+                </div>
+                <div class="list1">
+                    <div class="container mt-3">
+                        <div class="row" style="margin-bottom: 50px;">
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/MKcf.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Cà phê chồn</div>
+                                                <div class="text-muted">80.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/MKtrahc.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Trà hoa cúc</div>
+                                                <div class="text-muted">80.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/MKbacxiu.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Bạc xỉu</div>
+                                                <div class="text-muted">130.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/MKduahau.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Dưa hấu nha đam</div>
+                                                <div class="text-muted">200.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/MKmatcha.gif">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Matcha đá xay</div>
+                                                <div class="text-muted">140.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/MKlatte.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Latte</div>
+                                                <div class="text-muted">80.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/MKsocola.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Socola đá xay</div>
+                                                <div class="text-muted">50.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 offset-md-0 offset-sm-1 col-sm-10 offset-sm-1 my-lg-0 my-2">
+                                <div class="card"> <img class="card-img-top" src="assets/images/Drink/MKche.jpg">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between">
+                                            <div class="d-flex flex-column">
+                                                <div class="h6 font-weight-bold">Chè khúc bạch</div>
+                                                <div class="text-muted">200.000Đ</div>
+                                                <div class="btnBuy"><button type="button" class="btn btn-danger" style="padding-left: 20px; padding-right: 20px; padding-bottom: 5px;">Thêm vào giỏ</button></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_menu-text">
+                <marquee scrollamount=10>Ẩm thực GOLD hân hạnh được phục vụ quý khách!!!</marquee>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__content-left">
+                <div class="footer__logo">
+                    <img src="./assets/images/white-logo.png" alt="" class="footer__logo-img">
+                </div>
+                <div class="footer__icon">
+                    <a href="" class="footer__icon-link"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a>
+                    <a href="" class="footer__icon-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="" class="footer__icon-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer__content-right">
+                <div class="footer__left">
+                    <div class="footer__menu">
+                        <div class="footer__menu-header">Menu</div>
+                        <p><a href="">Trang chủ</a></p>
+                        <p><a href="">Giới thiệu</a></p>
+                        <p><a href="">Thực đơn</a></p>
+                        <p><a href="">Đặt bàn</a></p>
+                    </div>
+                    <div class="footer__address">
+                        <div class="footer__menu-header">Địa chỉ</div>
+                        <p>470.Trần Đại Nghĩa</p>
+                        <p>Ngũ Hành Sơn</p>
+                        <p>Tp.Đà Nẵng</p>
+                    </div>
+
+                </div>
+                <div class="footer__right">
+                    <div class="footer__hotline">
+                        <div class="footer__menu-header">Liên hệ</div>
+                        <div class="footer__menu-icon-and-number">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            <span>Hotline: 0388281722</span>
+                        </div>
+                    </div>
+                    <div class="footer__hotmail">
+                        <div class="footer__menu-header">Email</div>
+                        <div class="footer__menu-icon-and-number">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>Email: goldrestaurant@gmail.com</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="./assets/JS/owl.carousel.js"></script>
+<script src="./assets/JS/baner__slider-carousel-speed.js"></script>
+<script src="./assets/JS/List-lau.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+
+</html>

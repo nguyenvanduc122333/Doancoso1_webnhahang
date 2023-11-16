@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+
+    <link rel="stylesheet" href="./assets/CSS/viewBuffet.css">
+    <link rel="stylesheet" href="./assets/CSS/styleBf.css">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/JS/buffet.js"></script>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__nav--top">
+            <div class="nav__address">
+                <div class="address__icon nav__icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="address__text nav__text">
+                    470 - Trần Đại Nghĩa - Ngũ Hành Sơn - Đà Nẵng
+                </div>
+            </div>
+            <div class="nav__hotline">
+                <div class="hotline__icon nav__icon">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                </div>
+                <div class="hotline__text nav__text">
+                    Hotline: 0987654321
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="header__left">
+                <div class="header__logo">
+                    <img src="./assets/images/your-logo.png" alt="">
+                </div>
+            </div>
+            <div class="header__navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="TrangChu.html" class="navbar__link">
+                            <i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="gioithieu.html" class="navbar__link">
+                            Giới thiệu</a>
+                    </li>
+                    <li class="navbar__item navbar__item-has">
+                        <a href="" class="navbar__link page__color">
+                            Thực đơn
+                            <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                        <div class="navbar__submenu navbar__submenu-has">
+                            <ul class="navbar__submenu-list">
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuLau.html" class="navbar__submenu-link">
+                                        Lẩu
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuBBQ.html" class="navbar__submenu-link ">
+                                        Nướng BBQ
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuBuffet.html" class="navbar__submenu-link page__color">
+                                        Buffet
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuDrink.html" class="navbar__submenu-link">
+                                        Đồ uống
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="DatBan.html" class="navbar__link">
+                            </i> Đặt bàn
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="tintuc.html" class="navbar__link"> Tin tức</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="lienhe.html" class="navbar__link"> Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_mobile-and-tablet">
+                <label for="nav-mobile-input" class="nav_bars-btn">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                        class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </label>
+
+                <input type="checkbox" hidden class="nav_input" name="" id="nav-mobile-input">
+
+                <label for="nav-mobile-input" class="nav_overlay">
+
+                </label>
+
+                <nav class="nav_mobile">
+                    <label for="nav-mobile-input" class="nav_mobile-close">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="window-close"
+                            class="svg-inline--fa fa-window-close fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z">
+                            </path>
+                        </svg>
+                    </label>
+                    <ul class="nav_mobile-list">
+                        <li class="nav_mobile-link">
+                            <a href=""> <i class="fa fa-chevron-right" aria-hidden="true"></i> Trang chủ</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Giới thiệu</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>Thực đơn</a>
+                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div id="demo" class="collapse">
+                                <ul class="nav_mobile--sub-menu-list">
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Lẩu</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Nướng - BBQ</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Buffet</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Đồ uống</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Đặt bàn</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Tin tức</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Liên hệ</a>
+                        </li>
+                    </ul>
+            </div>
+
+
+        </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content_logo">
+            <a>Buffet_ ĂN NO THỎA THÍCH</a>
+        </div>
+        <div class="content_menu">
+            <div class="content_menu-best">
+                <div class="text">
+                    <a style="color: #fff;">Buffet 169k</a>
+                </div>
+                <div class="menu169">
+                    <div class="menu_chinh">
+
+                        <div class="page-content page-container" id="page-content">
+                            <div class="padding">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="container">
+                                            <div class="list list-row card" id="sortable" data-sortable-id="0" aria-dropeffect="move" style="margin-bottom: 0px;">
+                                                <div class="row">
+                                                    <div class="col-md-6" style="padding-right: 0px;" id="example2-left">
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/1.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Thịt bò cuộn nấm</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/2.jfif" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Bạch tuộc ướp tiêu</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/3.jfif" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Thịt bò Mỹ</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/4.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Ba chỉ ướp sa tế</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/5.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Gà tần Alashnia</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/6.jfif" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Tôm sốt nướng</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/7.jfif" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Đùi gà BBQ</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/8.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Nầm nướng</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/9.jfif" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Ba chỉ bò Mỹ</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/10.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Mực ống sốt cay</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6" style="padding-left: 0px;" id="example2-left">
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/11.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Xúc xích ướp cay</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/12.jfif" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Bạch tuộc sốt</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/13.jfif" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Sườn sụn ướp cay</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/14.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Bánh mỳ bơ</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/15.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Chân gà rút xương</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/16.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Nầm dê ướp</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/17.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Cá biển sốt cay</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/18.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Cơm chiên bò</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/19.jpg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Mỳ xào Hải sản</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                                            <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Buffet/buffet169/20.jpeg" alt="."></span></a></div>
+                                                            <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Súp cua Alaska</a>
+                                                                <div class="item-except text-muted text-sm h-1x">advisable for me to think about business content?</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_phu">
+                        <div class="diemtam">
+                            <div class="text2">
+                                <h2>Điểm tâm</h2>
+
+                            </div>
+                            <div class="list2">
+                                <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                    <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/BBQ/salad.jpg" alt="."></span></a></div>
+                                    <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Salad Nga</a>
+                                    </div>
+
+                                </div>
+                                <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                    <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/BBQ/ngochien.png" alt="."></span></a></div>
+                                    <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Ngô chiên bơ</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="list3">
+                                <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                    <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Lau/kchiK.jfif" alt="."></span></a></div>
+                                    <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Kim chi Hàn Quốc</a>
+                                    </div>
+
+                                </div>
+                                <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                    <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Lau/xxichN.png" alt="."></span></a></div>
+                                    <div class="flex"> <a href="#" class="item-author text-color" data-abc="true">Xúc xích Đức</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="douong">
+                            <div class="text2">
+                                <h2>Đồ uống</h2>
+                            </div>
+                            <div class="list2">
+                                <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                    <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Drink/GKcoca.jpg" alt="."></span></a></div>
+                                    <div class="flex"> <a href="#" class="item-author text-color" data-abc="true" style="color: rgb(0, 0, 0);">Coca cola tươi</a>
+                                    </div>
+
+                                </div>
+                                <div class="list-item" data-id="9" data-item-sortable-id="0" draggable="true" role="option" aria-grabbed="false">
+                                    <div><a href="#" data-abc="true"><span class="w-40 avatar gd-info"><img src="assets/images/Drink/GKnuockhoang.jpg" alt="."></span></a></div>
+                                    <div class="flex"> <a href="#" class="item-author text-color" data-abc="true" style="color: rgb(0, 0, 0);">Nước khoáng</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <a style="color: #fff;">Buffet 229k</a>
+                </div>
+                <div class="menu229k">
+                    <div class="items" style="margin-bottom: 20px; margin-top: 10px;">
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/buffet229/1.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Salad Nga</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/buffet229/2.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cháo bào ngư</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/buffet229/3.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Đậu hũ non ướp cay</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/buffet229/4.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Gỏi hải sản</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/buffet229/5.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Thịt dê tùng xẻo</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/buffet229/6.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Phô mai chiên</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/buffet229/7.jfif"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cá viên chiên</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/buffet229/8.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kimbap Hàn Quốc</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h1>Gồm Buffet combo 169k và các món trên</h1>
+                </div>
+                <div class="text" style="margin-top: 120px;">
+                    <a style="color: #fff;">Buffet 299k</a>
+                </div>
+                <div class="menu229k">
+                    <div class="items" style="margin-bottom: 20px; margin-top: 10px;">
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/bufet299/1.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Ốc hương bơ tỏi</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/bufet299/2.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Ngao hấp thái</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/bufet299/3.jfif"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Chân giò hun khói</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/bufet299/4.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cút lộn rang me</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/bufet299/5.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cua càng xanh sốt chua</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/bufet299/6.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Tôm chiên trứng muối</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/bufet299/7.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kem ngũ vị</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary"> <img class="profile-image" src="assets/images/Buffet/bufet299/8.jpg"> </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Chè khúc bạch</h5>
+                                <p class="card-text">"Hãy đến và thưởng thức GOLD Restaurant"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text1">
+                    <h1>Gồm Buffet combo 229k và các món trên</h1>
+                </div>
+                <div class="endow">
+                    <div class="container mt-sm-5 my-1">
+                        <div class="question ml-sm-5 pl-sm-5 pt-2">
+                            <div class="py-2 h1"><b>Ưu đãi dành riêng cho bạn</b></div>
+                            <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+                                <label class="options">Đặt bàn online <a style="color: red;">-10%</a><input type="radio" name="radio"> 
+                                <span class="checkmark" style="margin-top: 6px;"></span> </label>
+                                <label class="options">Đặt bàn và Checkin <a style="color: red;">-15%</a><input type="radio" name="radio">
+                                <span class="checkmark" style="margin-top: 6px;"></span> </label>
+                                <label class="options">Đặt bàn và thẻ khách hàng <a style="color: red;">-20%</a><input type="radio" name="radio"> 
+                                <span class="checkmark" style="margin-top: 6px;"></span> </label>
+                                <label class="options">Đặt bàn và Preview <a style="color: red;">-15%</a><input type="radio" name="radio"> 
+                                <span class="checkmark" style="margin-top: 6px;"></span> </label> </div>
+                        </div>
+                        <div class="d-flex align-items-center pt-3">
+
+                            <div class="ml-auto mr-sm-5"> <button class="btn btn-success"><h2>Đặt bàn</h2></button> </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content_menu-text">
+                <marquee scrollamount=10>Ẩm thực GOLD hân hạnh được phục vụ quý khách!!!</marquee>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__content">
+                <div class="footer__content-left">
+                    <div class="footer__logo">
+                        <img src="./assets/images/white-logo.png" alt="" class="footer__logo-img">
+                    </div>
+                    <div class="footer__icon">
+                        <a href="" class="footer__icon-link"><i class="fa fa-facebook-square"
+                                aria-hidden="true"></i></a>
+                        <a href="" class="footer__icon-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="" class="footer__icon-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer__content-right">
+                    <div class="footer__left">
+                        <div class="footer__menu">
+                            <div class="footer__menu-header">Menu</div>
+                            <p><a href="">Trang chủ</a></p>
+                            <p><a href="">Giới thiệu</a></p>
+                            <p><a href="">Thực đơn</a></p>
+                            <p><a href="">Đặt bàn</a></p>
+                        </div>
+                        <div class="footer__address">
+                            <div class="footer__menu-header">Địa chỉ</div>
+                            <p>470.Trần Đại Nghĩa</p>
+                            <p>Ngũ Hành Sơn</p>
+                            <p>Tp.Đà Nẵng</p>
+                        </div>
+
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__hotline">
+                            <div class="footer__menu-header">Liên hệ</div>
+                            <div class="footer__menu-icon-and-number">
+                                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                                <span>Hotline: 0388281722</span>
+                            </div>
+                        </div>
+                        <div class="footer__hotmail">
+                            <div class="footer__menu-header">Email</div>
+                            <div class="footer__menu-icon-and-number">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>Email: goldrestaurant@gmail.com</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./assets/JS/owl.carousel.js"></script>
+    <script src="./assets/JS/baner__slider-carousel-speed.js"></script>
+    <script src="./assets/JS/List-lau.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/view.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/color.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__nav--top">
+            <div class="nav__address">
+                <div class="address__icon nav__icon">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="address__text nav__text">
+                    470 - Trần Đại Nghĩa - Ngũ Hành Sơn - Đà Nẵng
+                </div>
+            </div>
+            <div class="nav__hotline">
+                <div class="hotline__icon nav__icon">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                </div>
+                <div class="hotline__text nav__text">
+                    Hotline: 0388281722
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="header__left">
+                <div class="header__logo">
+                    <img src="./assets/images/your-logo.png" alt="">
+                </div>
+            </div>
+            <div class="header__navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="TrangChu.html" class="navbar__link">
+                            <i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="gioithieu.html" class="navbar__link">
+                            Giới thiệu</a>
+                    </li>
+                    <li class="navbar__item navbar__item-has">
+                        <a href="" class="navbar__link page__color">
+                            Thực đơn
+                            <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+                        <div class="navbar__submenu navbar__submenu-has">
+                            <ul class="navbar__submenu-list">
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuLau.html" class="navbar__submenu-link">
+                                        Lẩu
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuBBQ.html" class="navbar__submenu-link page__color">
+                                        Nướng BBQ
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuBuffet.html" class="navbar__submenu-link">
+                                        Buffet
+                                    </a>
+                                </li>
+                                <li class="navbar__submenu-item">
+                                    <a href="MenuDrink.html" class="navbar__submenu-link">
+                                        Đồ uống
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="DatBan.html" class="navbar__link">
+                            </i> Đặt bàn
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="tintuc.html" class="navbar__link"> Tin tức</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="lienhe.html" class="navbar__link"> Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_mobile-and-tablet">
+                <label for="nav-mobile-input" class="nav_bars-btn">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                        class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </label>
+
+                <input type="checkbox" hidden class="nav_input" name="" id="nav-mobile-input">
+
+                <label for="nav-mobile-input" class="nav_overlay">
+
+                </label>
+
+                <nav class="nav_mobile">
+                    <label for="nav-mobile-input" class="nav_mobile-close">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="window-close"
+                            class="svg-inline--fa fa-window-close fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 394c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h404c3.3 0 6 2.7 6 6v340zM356.5 194.6L295.1 256l61.4 61.4c4.6 4.6 4.6 12.1 0 16.8l-22.3 22.3c-4.6 4.6-12.1 4.6-16.8 0L256 295.1l-61.4 61.4c-4.6 4.6-12.1 4.6-16.8 0l-22.3-22.3c-4.6-4.6-4.6-12.1 0-16.8l61.4-61.4-61.4-61.4c-4.6-4.6-4.6-12.1 0-16.8l22.3-22.3c4.6-4.6 12.1-4.6 16.8 0l61.4 61.4 61.4-61.4c4.6-4.6 12.1-4.6 16.8 0l22.3 22.3c4.7 4.6 4.7 12.1 0 16.8z">
+                            </path>
+                        </svg>
+                    </label>
+                    <ul class="nav_mobile-list">
+                        <li class="nav_mobile-link">
+                            <a href=""> <i class="fa fa-chevron-right" aria-hidden="true"></i> Trang chủ</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Giới thiệu</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i>Thực đơn</a>
+                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div id="demo" class="collapse">
+                                <ul class="nav_mobile--sub-menu-list">
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Lẩu</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Nướng - BBQ</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Buffet</a></li>
+                                    <li class="nav_mobile--sub-menu-link"><a href="">Đồ uống</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Đặt bàn</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Tin tức</a>
+                        </li>
+                        <li class="nav_mobile-link">
+                            <a href=""><i class="fa fa-chevron-right" aria-hidden="true"></i> Liên hệ</a>
+                        </li>
+                    </ul>
+            </div>
+
+
+        </div>
+        </div>
+    </header>
+
+    <main id="tg-main" class="tg-main tg-haslayout">
+        <!--************************************
+                News Grid Start
+        *************************************-->
+        <div class="tg-sectionspace tg-haslayout">
+            <div class="container">
+                <div class="row" style="margin-top: 100px">
+                    <div id="tg-twocolumns" class="tg-twocolumns">
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 pull-right">
+                            <div id="tg-content" class="tg-content">
+                                <div class="tg-newslist">
+                                    <div class="tg-sectionhead">
+                                        <h2><span>Ẩm thực &amp; Hương vị</span>Bản tin hôm nay</h2>
+                                    </div>
+                                    <div class="row" style="width: 800px;">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <article class="tg-post">
+                                                <figure>
+                                                    <a href="https://www.thainguyentrade.com.vn/nha-hang-da-nang-sang-trong.html"><img src="assets/images/tintuc/1.jpg" alt="image description"></a>
+                                                </figure>
+                                                <div class="tg-postcontent">
+
+                                                    <div class="tg-posttitle">
+                                                        <h3><a href="javascript:void(0);">Top 10 nhà hàng view đẹp Đà Nẵng</a></h3>
+                                                    </div>
+                                                    <div class="tg-description">
+                                                        <p>Nhà hàng sang trọng ở Đà Nẵng cập nhật mới nhật dành cho những tín đồ du lịch. Thành phố Đà Nẵng xinh đẹp hấp dẫn không chỉ bởi cảnh quan thiên nhiên đặc sắc mà còn bởi thế giới ẩm thực phong phú
+                                                            từ bình dân cho đến cao cấp. Cùng khám phá top 10 nhà hàng ở Đà Nẵng nổi tiếng về sự sang trọng bậc nhất nhé!... <a href="javascript:(0);">tiếp</a></p>
+                                                    </div>
+                                                    <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">GOLD Restaurant</a></span>
+                                                    <ul class="tg-postmetadata">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-comment-o"></i><i>21,415 Bình luận</i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-eye"></i><i>24,565 Lượt xem</i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <article class="tg-post">
+                                                <figure>
+                                                    <a href="javascript:void(0);"><img src="assets/images/tintuc/2.jpg" alt="image description"></a>
+                                                </figure>
+                                                <div class="tg-postcontent">
+
+                                                    <div class="tg-posttitle">
+                                                        <h3><a href="javascript:void(0);">Thực khách thích thú nhà hàng GOLD</a></h3>
+                                                    </div>
+                                                    <div class="tg-description">
+                                                        <p>Du khách đến với Việt Nam sẽ không thể nào bỏ qua món phở - món ăn quốc hồn, quốc túy, đậm hồn dân tộc. Phở không chỉ một lần được vinh danh trong danh sách những món ăn ngon nhất thế giới mà bạn
+                                                            nên thử ít nhất một lần trong đời.... <a href="javascript:(0);">tiếp</a></p>
+                                                    </div>
+                                                    <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">GOLD Restaurant</a></span>
+                                                    <ul class="tg-postmetadata">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-comment-o"></i><i>21,415 Bình luận</i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-eye"></i><i>24,565 Lượt xem</i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <article class="tg-post">
+                                                <figure>
+                                                    <a href="javascript:void(0);"><img src="assets/images/tintuc/3.jpg" alt="image description"></a>
+                                                </figure>
+                                                <div class="tg-postcontent">
+
+                                                    <div class="tg-posttitle">
+                                                        <h3><a href="javascript:void(0);">Nhà hàng có người nổi tiếng ghé thăm</a></h3>
+                                                    </div>
+                                                    <div class="tg-description">
+                                                        <p>Nhà hàng ẩm thực huyền thoại GOLD từng đón tiếp nhiều người nổi tiếng như Hoa hậu Mai Phương Thúy,Tổng thống Mỹ Barrack Obama, cựu danh thủ David Beckham, Đàm Vĩnh Hưng, Mỹ Tâm, danh hài Hoài Linh...
+                                                            <a href="javascript:(0);">tiếp</a></p>
+                                                    </div>
+                                                    <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">GOLD Restaurant</a></span>
+                                                    <ul class="tg-postmetadata">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-comment-o"></i><i>21,415 Bình luận</i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-eye"></i><i>24,565 Lượt xem</i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <article class="tg-post">
+                                                <figure>
+                                                    <a href="javascript:void(0);"><img src="assets/images/tintuc/4.jpg" alt="image description"></a>
+                                                </figure>
+                                                <div class="tg-postcontent">
+
+                                                    <div class="tg-posttitle">
+                                                        <h3><a href="javascript:void(0);">GOLD đạt chứng chỉ an toàn thực phẩm</a></h3>
+                                                    </div>
+                                                    <div class="tg-description">
+                                                        <p>Quý khách hàng thân mến! Để giúp khách hàng yên tâm hơn khi sử dụng dịch vụ ẩm thực dành cho thực khách xin gửi đến Quý khách hàng giấy chứng nhận của Cục an toàn vệ sinh thực phẩm chứng nhận thực
+                                                            phẩm mà Nhà hàng GOLD đang cung cấp trên thị trường đã đạt tiêu chuẩn.... <a href="javascript:(0);">tiếp</a></p>
+                                                    </div>
+                                                    <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">GOLD Restaurant</a></span>
+                                                    <ul class="tg-postmetadata">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-comment-o"></i><i>21,415 Bình luận</i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-eye"></i><i>24,565 Lượt xem</i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <article class="tg-post">
+                                                <figure>
+                                                    <a href="javascript:void(0);"><img src="assets/images/tintuc/5.jpg" alt="image description"></a>
+                                                </figure>
+                                                <div class="tg-postcontent">
+
+                                                    <div class="tg-posttitle">
+                                                        <h3><a href="javascript:void(0);">Menu đa dạng của nhà hàng GOLD</a></h3>
+                                                    </div>
+                                                    <div class="tg-description">
+                                                        <p>Với thực đơn ẩm thực vô cùng phong phú, đa dạng GOLD đem lại sự tiện ích cho thực khách nơi đây 1 cách thoải mái nhất, ngon miệng nhất và phù hợp với mọi lứa tuổi với giá cả vô cùng hợp lí trong
+                                                            một không gian sang trọng, ấm cúng... <a href="javascript:(0);">tiếp</a></p>
+                                                    </div>
+                                                    <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">GOLD Restaurant</a></span>
+                                                    <ul class="tg-postmetadata">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-comment-o"></i><i>21,415 Bình luận</i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-eye"></i><i>24,565 Lượt xem</i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <article class="tg-post">
+                                                <figure>
+                                                    <a href="javascript:void(0);"><img src="assets/images/tintuc/6.jpg" alt="image description"></a>
+                                                </figure>
+                                                <div class="tg-postcontent">
+
+                                                    <div class="tg-posttitle">
+                                                        <h3><a href="javascript:void(0);">Bổ sung dinh dưỡng đúng cách</a></h3>
+                                                    </div>
+                                                    <div class="tg-description">
+                                                        <p>Chất bổ sung dinh dưỡng là một loại vitamin, khoáng chất, hoặc thảo mộc mà bạn ăn hoặc uống vào để cải thiện sức khỏe nhưng không có giá trị dinh dưỡng. Những chất bổ sung này không nhằm mục đích
+                                                            chữa bệnh hoặc điều trị bệnh... <a href="javascript:(0);">tiếp</a></p>
+                                                    </div>
+                                                    <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">GOLD Restaurant</a></span>
+                                                    <ul class="tg-postmetadata">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-comment-o"></i><i>21,415 Bình luận</i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-eye"></i><i>24,565 Lượt xem</i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <article class="tg-post">
+                                                <figure>
+                                                    <a href="javascript:void(0);"><img src="assets/images/tintuc/7.jpg" alt="image description"></a>
+                                                </figure>
+                                                <div class="tg-postcontent">
+
+                                                    <div class="tg-posttitle">
+                                                        <h3><a href="javascript:void(0);">Top đầu bếp nổi bật 2020</a></h3>
+                                                    </div>
+                                                    <div class="tg-description">
+                                                        <p>Các đầu bếp trên toàn thế giới đã cống hiến cả cuộc đời của mình để chỉ kiếm được một ngôi sao đáng thèm muốn ấy, để được ghi nhận sự xuất sắc về tay nghề của họ. Đáng ngưỡng mộ là số ít các đầu
+                                                            bếp trong số đó còn “tích luỹ” được một số lượng lớn các ngôi sao Michelin danh giá.... <a href="javascript:(0);">tiếp</a></p>
+                                                    </div>
+                                                    <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">GOLD Restaurant</a></span>
+                                                    <ul class="tg-postmetadata">
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-comment-o"></i><i>21,415 Bình luận</i></a></li>
+                                                        <li><a href="javascript:void(0);"><i class="fa fa-eye"></i><i>24,565 Lượt xem</i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 pull-left">
+                            <aside id="tg-sidebar" class="tg-sidebar">
+                                <div class="tg-widget tg-widgetsearch">
+                                    <form class="tg-formtheme tg-formsearch">
+                                        <div class="form-group">
+                                            <button type="submit"><i class="icon-magnifier"></i></button>
+                                            <input type="search" name="search" class="form-group" placeholder="Tìm kiếm">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tg-widget tg-catagories">
+                                    <div class="tg-widgettitle">
+                                        <h3>Chủ đề</h3>
+                                    </div>
+                                    <div class="tg-widgetcontent">
+                                        <ul>
+                                            <li><a href="javascript:void(0);"><span>Chụp ảnh</span><em>28245</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>Nhà hàng</span><em>4856</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>View đẹp</span><em>8654</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>Ăn &amp; Uống</span><em>6247</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>Body &amp; Thriller</span><em>888654</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>Healthy &amp; Horror</span><em>873144</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>Food</span><em>18465</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>Ăn &amp; Uống</span><em>3148</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>Yêu thích</span><em>77531</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>GOLD</span><em>9247</em></a></li>
+                                            <li><a href="javascript:void(0);"><span>Xem Thêm</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tg-widget tg-widgettrending">
+                                    <div class="tg-widgettitle">
+                                        <h3>Trào lưu</h3>
+                                    </div>
+                                    <div class="tg-widgetcontent">
+                                        <ul>
+                                            <li>
+                                                <article class="tg-post">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/tintuc/1.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-postcontent">
+                                                        <div class="tg-posttitle">
+                                                            <h3><a href="javascript:void(0);">Dòng son thời thượng 3ce</a></h3>
+                                                        </div>
+                                                        <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">Kathrine Culbertson</a></span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="tg-post">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/tintuc/2.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-postcontent">
+                                                        <div class="tg-posttitle">
+                                                            <h3><a href="javascript:void(0);">Mỹ phẩm nội địa Trung đáng thử</a></h3>
+                                                        </div>
+                                                        <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">Kathrine Culbertson</a></span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="tg-post">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/tintuc/3.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-postcontent">
+                                                        <div class="tg-posttitle">
+                                                            <h3><a href="javascript:void(0);">Sắc đỏ bao trùm BST của NARS Comestic</a></h3>
+                                                        </div>
+                                                        <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">Kathrine Culbertson</a></span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="tg-post">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/tintuc/4.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-postcontent">
+                                                        <div class="tg-posttitle">
+                                                            <h3><a href="javascript:void(0);">10 bảng phấn mắt đẹp “huyền thoại”</a></h3>
+                                                        </div>
+                                                        <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">Kathrine Culbertson</a></span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="tg-post">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/tintuc/5.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-postcontent">
+                                                        <div class="tg-posttitle">
+                                                            <h3><a href="javascript:void(0);">Từ A-Z về phấn má hồng 3ce</a></h3>
+                                                        </div>
+                                                        <span class="tg-bookwriter">Bởi: <a href="javascript:void(0);">Kathrine Culbertson</a></span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tg-widget tg-widgetinstagram">
+                                    <div class="tg-widgettitle">
+                                        <h3>Instagram</h3>
+                                    </div>
+                                    <div class="tg-widgetcontent">
+                                        <ul>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/1.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/2.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/3.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/4.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/5.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/6.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/7.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/8.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="assets/images/insta/9.png" alt="image description">
+                                                    <figcaption><a href="javascript:void(0);"><i class="icon-heart"></i><em>50,134</em></a></figcaption>
+                                                </figure>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tg-widget tg-widgetblogers">
+                                    <div class="tg-widgettitle">
+                                        <h3>Top Đầu bếp</h3>
+                                    </div>
+                                    <div class="tg-widgetcontent">
+                                        <ul>
+                                            <li>
+                                                <div class="tg-author">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/daubep/5.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-authorcontent">
+                                                        <h2><a href="javascript:void(0);">Alex Nguyễn</a></h2>
+                                                        <span>21,658 Truy cập</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tg-author">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/daubep/1.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-authorcontent">
+                                                        <h2><a href="javascript:void(0);">Minh Nhật</a></h2>
+                                                        <span>21,658 Truy cập</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tg-author">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/daubep/2.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-authorcontent">
+                                                        <h2><a href="javascript:void(0);">Lan Hương</a></h2>
+                                                        <span>21,658 Truy cập</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tg-author">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/daubep/3.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-authorcontent">
+                                                        <h2><a href="javascript:void(0);">Tiến Trần</a></h2>
+                                                        <span>21,658 Truy cập</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tg-author">
+                                                    <figure>
+                                                        <a href="javascript:void(0);"><img src="assets/images/daubep/4.jpg" alt="image description"></a>
+                                                    </figure>
+                                                    <div class="tg-authorcontent">
+                                                        <h2><a href="javascript:void(0);">Vinh Hoa</a></h2>
+                                                        <span>21,658 Truy cập</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--************************************
+            Main End
+    *************************************-->
+
+    </div>
+
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__content-left">
+                <div class="footer__logo">
+                    <img src="./assets/images/white-logo.png" alt="" class="footer__logo-img">
+                </div>
+                <div class="footer__icon">
+                    <a href="" class="footer__icon-link"><i class="fa fa-facebook-square"
+                            aria-hidden="true"></i></a>
+                    <a href="" class="footer__icon-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="" class="footer__icon-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="footer__content-right">
+                <div class="footer__left">
+                    <div class="footer__menu">
+                        <div class="footer__menu-header">Menu</div>
+                        <p><a href="">Trang chủ</a></p>
+                        <p><a href="">Giới thiệu</a></p>
+                        <p><a href="">Thực đơn</a></p>
+                        <p><a href="">Đặt bàn</a></p>
+                    </div>
+                    <div class="footer__address">
+                        <div class="footer__menu-header">Địa chỉ</div>
+                        <p>470.Trần Đại Nghĩa</p>
+                        <p>Ngũ Hành Sơn</p>
+                        <p>Tp.Đà Nẵng</p>
+                    </div>
+
+                </div>
+                <div class="footer__right">
+                    <div class="footer__hotline">
+                        <div class="footer__menu-header">Liên hệ</div>
+                        <div class="footer__menu-icon-and-number">
+                            <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            <span>Hotline: 0388281722</span>
+                        </div>
+                    </div>
+                    <div class="footer__hotmail">
+                        <div class="footer__menu-header">Email</div>
+                        <div class="footer__menu-icon-and-number">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>Email: goldrestaurant@gmail.com</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="./assets/JS/owl.carousel.js"></script>
+<script src="./assets/JS/baner__slider-carousel-speed.js"></script>
+<script src="./assets/JS/List-lau.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+
+</html>
