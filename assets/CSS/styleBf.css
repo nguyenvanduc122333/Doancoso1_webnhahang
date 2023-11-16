@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: url(https://designshack.net/wp-content/uploads/mytextures-15.jpg);
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px
+    62.5% = 10px */
+    line-height: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    color: red;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+}
+
+ :root {
+    --black-color: #000;
+    --white-color: #fff;
+    --primary-color: #eb450e;
+    --header: 130px;
+    --text-color: rgb(141, 139, 139);
+}
+
+/* ******content***** */
+
+.text {
+    float: none;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: auto;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9eCpxSe9I9yEF_Rp9J8hmCkEYxJ4rci_zA&usqp=CAU);
+}
+.text a {
+    font-size: 38px;
+    color: rgb(250, 249, 249);
+    padding: 20px 550px;
+    font-family: Didot;
+}
+
+.list {
+    width: 100%;
+    height: auto;
+    float: none;
+    background: url(https://image.freepik.com/free-photo/black-white-gradients-light-background-creative-project_1962-765.jpg);
+}
+
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.content_logo {
+    height: 80px;
+    width: auto;
+    float: none;
+    
+}
+.content_logo a {
+    font-size: 40px;
+    font-family: Didot;
+    padding-left: 40px;
+    color: rgb(240, 54, 22);
+}
+
+.content_menu {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 0px;
+}
+
+.content_menu-best {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 50px;
+}
+
+
+.content_menu-hs {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 50px;
+}
+
+.content_menu-thit {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 50px;
+}
+
+.content_menu-monkhac {
+    width: 100%;
+    height: auto;
+    float: none;
+}
+
+.content_menu-text {
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    float: none;
+}
+
+.content_menu-text marquee {
+    font-size: 30px;
+    padding-left: 200px;
+}
+
+
+
+
+
+.menu169 {
+    height: 650px;
+    width: auto;
+    margin: 10px 50px;
+    display: flex;
+}
+
+.menu169 .menu_chinh {
+    height: 600px;
+    width: 55%;
+    float: left;
+}
+
+.menu169 .menu_phu {
+    height: 600px;
+    width: 45%;
+    float: right;
+}
+
+.diemtam {
+    float: none;
+    width: auto;
+    height: 45%;
+    margin: 25px 30px;
+    border-radius: 50%;
+    background: url(https://i.pinimg.com/originals/3c/92/3c/3c923c45bfa7faed4f0de48f1bc0d737.jpg);
+}
+
+.douong {
+    float: none;
+    width: auto;
+    height: 45%;
+    margin: 5px 30px;
+    border-radius: 50%;
+    background: url(https://images.all-free-download.com/images/graphicthumb/hand_drawn_cocktail_with_grunge_background_544695.jpg);
+}
+
+.text2 {
+    width: 30%;
+    height: auto;
+    margin-left: 40%;
+    padding-top: 30px;
+    float: none;
+
+}
+
+.diemtam .text2 h2 {
+    font-family: Didot;
+    font-size: 30px;
+    color: rgb(238, 232, 232);
+}
+
+.douong .text2 h2 {
+    font-family: Didot;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.list2 {
+    height: 50%;
+    width: 40%;
+    float: left;
+    margin-left: 17%;
+    margin-top: 2%;
+}
+
+.list3 {
+    height: 50%;
+    width: 40%;
+    float: left;
+    margin-top: 2%;
+}
+
+.list2 a, .list3 a {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.menu229k {
+    height: 380px;
+    width: auto;
+    margin: 0px 50px;
+    display: flex;
+}
+
+.text1 {
+    height: 50px;
+    line-height: 50px;
+    width: auto;
+    margin: 0px 350px 90px 350px;
+    display: flex;
+    position: absolute;
+}
+
+.text1 h1 {
+    text-align: center;
+    font-family: Didot;
+    font-size: 35px;
+}
+
+.endow {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 50px;
+    margin-top: 200px;
+}
+
+
+
+
